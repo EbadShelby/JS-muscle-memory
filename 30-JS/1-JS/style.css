@@ -1,0 +1,58 @@
+
+@import "tailwindcss";
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply box-border
+  }
+  * {
+    @apply m-0 p-0
+  }
+  
+  html:focus-within { 
+    @apply scroll-smooth
+  }
+  html, body {
+    @apply min-h-dvh
+  }
+  html {
+    @apply bg-[url(img/background.jpg)]
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    @apply align-middle max-w-full
+  }
+  input,
+  button,
+  textarea,
+  select {
+    @apply font-[inherit]
+  }
+  p {
+    @apply wrap-break-word text-pretty;
+  }
+  kbd {
+    @apply block text-5xl
+  }
+}
+
+@layer components {
+  
+}
+
+@layer utilities {
+  .keys {
+    @apply flex items-center justify-center flex-1 min-h-dvh
+  }
+  .key {
+    @apply transition-all duration-75 border-4 rounded-xs m-4 text-2xl px-4 py-2 w-40 text-center bg-black/20 
+  }
+  .sound {
+    @apply text-[1.2rem] uppercase tracking-widest text-yellow-500 font-medium text-shadow-lg 
+  }
+}
