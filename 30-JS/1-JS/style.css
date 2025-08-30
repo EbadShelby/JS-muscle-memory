@@ -50,9 +50,13 @@
     @apply flex items-center justify-center flex-1 min-h-dvh
   }
   .key {
-    @apply transition-all duration-75 border-4 rounded-xs m-4 text-2xl px-4 py-2 w-40 text-center bg-black/20 text-white border-black
+    @apply transition-all duration-100 border-4 rounded-xs m-4 text-2xl px-4 py-2 w-40 text-center bg-black/20 text-white border-black
   }
   .sound {
-    @apply text-[1.2rem] uppercase tracking-widest text-yellow-500 font-medium text-shadow-lg 
+    @apply text-[.8rem] uppercase tracking-widest text-yellow-500 font-medium text-shadow-lg 
+  }
+  .playing {
+    @apply border-yellow-500 shadow-lg/90;
+    transform: scale(1.2);
   }
 }
